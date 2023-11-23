@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OpcoesActivity">
+
+    <Button
+        android:id="@+id/button_calcular"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:text="CALCULAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_sapato" />
+
+    <ImageView
+        android:id="@+id/imageView_sapato"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="169dp"
+        android:layout_below="@id/checkBox_sapato"
+        app:layout_constraintBottom_toTopOf="@+id/button_calcular"
+        app:layout_constraintEnd_toStartOf="@+id/text_qntsapato"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_sapato"
+        app:srcCompat="@drawable/sapato" />
+
+    <CheckBox
+        android:id="@+id/checkBox_sapato"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView_sapato"
+        android:layout_marginEnd="19dp"
+        android:background="#6FED8A"
+        android:text="CheckBox"
+        app:layout_constraintBottom_toTopOf="@+id/imageView_sapato"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_sapato"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_bermuda" />
+
+    <EditText
+        android:id="@+id/editText_qntS"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="23dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/text_qntsapato"
+        app:layout_constraintEnd_toStartOf="@+id/textView_valorSapato"
+        app:layout_constraintStart_toEndOf="@+id/text_qntsapato" />
+
+    <TextView
+        android:id="@+id/text_qntsapato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="3dp"
+        android:text="Quantidade"
+        app:layout_constraintEnd_toStartOf="@+id/editText_qntS"
+        app:layout_constraintStart_toEndOf="@+id/imageView_sapato"
+        app:layout_constraintTop_toTopOf="@+id/imageView_sapato" />
+
+    <TextView
+        android:id="@+id/textView_valorSapato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="9dp"
+        android:text="Preço"
+        app:layout_constraintBottom_toBottomOf="@+id/editText_qntS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editText_qntS" />
+
+    <ImageView
+        android:id="@+id/imageView_bermuda"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="35dp"
+        android:layout_below="@id/checkBox_bermuda"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox_sapato"
+        app:layout_constraintEnd_toStartOf="@+id/text_qntbermuda"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_bermuda"
+        app:srcCompat="@drawable/bermuda" />
+
+    <CheckBox
+        android:id="@+id/checkBox_bermuda"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="CheckBox"
+        android:background="#6FED8A"
+        android:layout_below="@id/imageView_camisa"
+        app:layout_constraintBottom_toTopOf="@+id/imageView_bermuda"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox_sapato"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_camisa" />
+
+    <EditText
+        android:id="@+id/editText_qntB"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="23dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/text_qntbermuda"
+        app:layout_constraintEnd_toStartOf="@+id/textView_valorBermuda"
+        app:layout_constraintStart_toEndOf="@+id/text_qntbermuda" />
+
+    <TextView
+        android:id="@+id/text_qntbermuda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="3dp"
+        android:text="Quantidade"
+        app:layout_constraintEnd_toStartOf="@+id/editText_qntB"
+        app:layout_constraintStart_toEndOf="@+id/imageView_bermuda"
+        app:layout_constraintTop_toTopOf="@+id/imageView_bermuda" />
+
+    <TextView
+        android:id="@+id/textView_valorBermuda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:text="Preço"
+        app:layout_constraintBottom_toBottomOf="@+id/editText_qntB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editText_qntB" />
+
+    <CheckBox
+        android:id="@+id/checkBox_camisa"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="CheckBox"
+        android:background="#6FED8A"
+        android:layout_below="@id/imageView_camisa"
+        app:layout_constraintBottom_toTopOf="@+id/imageView_camisa"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox_bermuda"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_qntC"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="23dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/text_qntcamisa"
+        app:layout_constraintEnd_toStartOf="@+id/textView_valorCamisa"
+        app:layout_constraintStart_toEndOf="@+id/text_qntcamisa" />
+
+    <TextView
+        android:id="@+id/textView_valorCamisa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:text="Preço"
+        app:layout_constraintBottom_toBottomOf="@+id/editText_qntC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editText_qntC" />
+
+    <ImageView
+        android:id="@+id/imageView_camisa"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="24dp"
+        android:layout_below="@id/checkBox_camisa"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox_bermuda"
+        app:layout_constraintEnd_toStartOf="@+id/text_qntcamisa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_camisa"
+        app:srcCompat="@drawable/camisa" />
+
+    <TextView
+        android:id="@+id/text_qntcamisa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="3dp"
+        android:text="Quantidade"
+        app:layout_constraintEnd_toStartOf="@+id/editText_qntC"
+        app:layout_constraintStart_toEndOf="@+id/imageView_camisa"
+        app:layout_constraintTop_toTopOf="@+id/imageView_camisa" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
